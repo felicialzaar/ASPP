@@ -1,1 +1,2 @@
-ASAP Day 1 testing
+Advanced scientifict programming with python.
+Exercises and project.
