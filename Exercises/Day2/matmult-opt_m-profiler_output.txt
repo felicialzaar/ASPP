@@ -1,0 +1,32 @@
+Filename: matmult_optimized.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+     3   47.324 MiB   47.324 MiB           1   @profile
+     4   47.379 MiB    0.055 MiB           1   def X(N): return np.random.randint(100, size=(N, N))
+
+
+Filename: matmult_optimized.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+     6   47.379 MiB   47.379 MiB           1   @profile
+     7   47.859 MiB    0.480 MiB           1   def Y(N): return np.random.randint(100, size=(N, N + 1))
+
+
+Filename: matmult_optimized.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+     9   47.859 MiB   47.859 MiB           1   @profile
+    10   48.344 MiB    0.484 MiB           1   def multiply(X, Y): return np.matmul(X, Y)
+
+
+Filename: matmult_optimized.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+    12   48.344 MiB   48.344 MiB           1   @profile
+    13   48.363 MiB    0.020 MiB           1   def print_results(result): print(result)
+
+

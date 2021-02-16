@@ -1,0 +1,38 @@
+Timer unit: 1e-06 s
+
+Total time: 0.002116 s
+File: matmult_optimized.py
+Function: X at line 3
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     3                                           @profile
+     4         1       2116.0   2116.0    100.0  def X(N): return np.random.randint(100, size=(N, N))
+
+Total time: 0.00085 s
+File: matmult_optimized.py
+Function: Y at line 6
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     6                                           @profile
+     7         1        850.0    850.0    100.0  def Y(N): return np.random.randint(100, size=(N, N + 1))
+
+Total time: 0.016954 s
+File: matmult_optimized.py
+Function: multiply at line 9
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     9                                           @profile
+    10         1      16954.0  16954.0    100.0  def multiply(X, Y): return np.matmul(X, Y)
+
+Total time: 0.000863 s
+File: matmult_optimized.py
+Function: print_results at line 12
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    12                                           @profile
+    13         1        863.0    863.0    100.0  def print_results(result): print(result)
+
