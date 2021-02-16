@@ -1,2 +1,3 @@
 from .mammals import Mammals
-from .birds import Birds
+from .harmless import *
+from .dangerous import *
