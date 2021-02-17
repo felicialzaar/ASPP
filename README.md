@@ -1,2 +1,2 @@
-Advanced scientifict programming with python.
+Advanced scientific programming with python.
 Exercises and project.
