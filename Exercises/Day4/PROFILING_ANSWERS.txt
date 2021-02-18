@@ -1,0 +1,20 @@
+Day 4
+
+Exercise 1
+
+b) According to line_profiler, I went from in total 17.0946 s for the naive rbf_network function, 
+to 0.123724 s for the SciPy implementation.
+
+c) SciPy is faster because it works in vectorized format, using numpy arrays to manipulate many
+value at once. The naive approach uses nested for-loops to access matrix elements one by one. As
+show in rbf_l-profiler_output.txt, each of the inner for-loops require millions of iterations,
+costing much time. The SciPy-approach has a only two time-consuming steps, and they only cost
+84 and 40 ms, respectivley. 
+
+d) Measuring total time for each implementation yields
+Python:  2.946566343307495
+Scipy:  0.11969876289367676
+Cython:  0.5405936241149902
+
+Cython this improves the speed about as much as vectorizing with SciPy. 
+

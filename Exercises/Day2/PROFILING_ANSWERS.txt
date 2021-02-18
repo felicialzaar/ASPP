@@ -1,0 +1,13 @@
+Day 2
+
+Exercise 3
+
+3.a) Line 9, 14 and 27 are the most time-consuming. The same lines, in addition to line 19 and 30, 
+are most memory-consuming. 27 is the worst in both cases. 
+
+3.b) Line 25, 26, 29 and 52 are most time-consuming. 52 is the worst because it represents the time 
+consumed by all operations in the factorize function. Line 52 is also the worst memory-wise.
+
+3.c) After optimization, the matmult script executed in 0.002116 s, whereas the unoptimized script 
+required 0.211283 s. The memory use of individual lines was slightly higher in the optmized script. 
+On the other hand, it has much fewer memory-consuming lines.
