@@ -1,0 +1,10 @@
+{
+  "test_simple_math.py::test_simpile_add[1+1-2]": true,
+  "test_simple_math.py::test_simpile_add[3+4-7]": true,
+  "test_simple_math.py::test_simpile_add[5+7-12]": true,
+  "test_simple_math.py::test_simple_add[1+1-2]": true,
+  "test_simple_math.py::test_simple_add[3+4-7]": true,
+  "test_simple_math.py::test_simple_add[5+7-12]": true,
+  "test_simple_math.py::test_simple_div[42-7-5]": true,
+  "test_simple_math.py::test_simple_sub[5-7-42]": true
+}
