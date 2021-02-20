@@ -12,6 +12,6 @@ import numpy
 #]
 
 setup(
-	ext_modules	= cythonize(["fastloop.pyx"]), #, compiler_directives={'linetrace': True}),
+	ext_modules	= cythonize(["*.pyx"]), #, compiler_directives={'linetrace': True}),
     include_dirs=[numpy.get_include()],
 )
