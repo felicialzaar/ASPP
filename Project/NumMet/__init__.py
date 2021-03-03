@@ -1,4 +1,4 @@
-from .NumericalDerivative import *
+from .NumericalDerivatives import *
 from .NumericalIntegration import *
 from .NumericalRoots import *
 from .FirstOrderODEs import *
