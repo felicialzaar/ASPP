@@ -1,6 +1,6 @@
 """
 Numerical nethods for integration of 1D functions. Includes trapezoidal, Bode
-and Simpson formulas.
+and Simpson formulas, as well as Gaussian quadrature by Legendre polynomials. 
 """
 
 import numpy as np
@@ -64,7 +64,7 @@ def bodes_rule(f, x, h):
   f : function
       Function to integrate.
   x : ndarray
-      Points over which to evaluate integral.
+      Points over which to evaluate integral. Should have length %4. 
   h : float
       Step size, i.e. distance between points in x.
 
