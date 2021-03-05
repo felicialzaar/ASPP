@@ -24,7 +24,8 @@ def trapezoidal_rule(f, x, h):
   float
       Numerical integral over points x.
   """
-
+  
+  y = f(x)
   y_left = y[:-2][::2]
   y_center = y[1:-1][::2]
   y_right = y[2:][::2]
@@ -83,25 +84,28 @@ def bodes_rule(f, x, h):
 
   return (2*h/45) * sum(7*y0 + 32*y1 + 12*y2 + 32*y3 + 7*y4 )
 
-def gaussian_quadrature(func, l, tol=1e-10):
+def gaussian_quadrature(f, l, roots=None, tol=1e-10):
   """
   Gaussian quadrature with Legendre polynomials.
 
   Parameters
   ----------
-  f : function
-      Function to integrate.
-  l : int
-      Index of Legendre polynomial to use for abscissae, i.e. number of roots.
-  tol: float
-      Tolerance of difference between numerical and true root.
+  f :     function
+          Function to integrate.
+  l :     int
+          Index of Legendre polynomial to use for abscissae, i.e. number of roots.
+  roots:  ndarray, optional
+          Predetermined roots of Legendre polynomials.
+  tol:    float, optional
+          Tolerance of difference between numerical and true root.
 
   Returns
   -------
   float
       Numerical integral over points x.
   """
-
-  roots = legendre_roots(l, tol)
+  
+  if roots is None:
+    roots = legendre_roots(l, tol)
   weights = 2/((1 - roots**2) * legendre_derivative(l, roots)**2)
-  return sum(weights * func(roots))
+  return sum(weights * f(roots))
